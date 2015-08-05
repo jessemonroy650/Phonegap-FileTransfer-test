@@ -1,16 +1,14 @@
 # Phonegap-FileTransfer-test
 a simple test of Phonegaps's FileTransfer API
 
-Documentation source: [cordova-plugin-file-transfer](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) <br />
-The source is poorly written & incomplete.
+Abstract: The FileTransfer object provides a way to upload files using an HTTP multi-part POST request, and to download files as well.
 
-The FileTransfer object provides a way to upload files using an HTTP multi-part POST request, and to download files as well.
+Documentation source: [cordova-plugin-file-transfer](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) <br />
+*The source is poorly written & incomplete.*
 
 ##Properties##
 
 This property (callback) gets appended to the `FileTransfer` object.
-
-* onprogress
 
 * `onprogress` gets called-back as the file transfer progresses. The parameters sent to it are not well documented. <p />The callback parameters are:
  - e.lengthComputable - (boolean) determines if the length of the file is computable
@@ -21,9 +19,9 @@ NOTES: From example code in documentation, and [src/android/FileProgressResult.j
 
 ##Methods##
 
-* upload
-* download
-* abort
+* `upload`
+* `download`
+* `abort`
 
 ##Parameters for Methods##
 
