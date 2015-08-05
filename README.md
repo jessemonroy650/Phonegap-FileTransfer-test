@@ -1,6 +1,8 @@
 # Phonegap-FileTransfer-test
 a simple test of Phonegaps's FileTransfer API
 
+Documentation source: [cordova-plugin-file-transfer](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) <br />
+The source is poorly written & incomplete.
 
 ##Properties##
 
