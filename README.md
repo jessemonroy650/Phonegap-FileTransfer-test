@@ -8,11 +8,10 @@ The source is poorly written & incomplete.
 
 * onprogress
 
-*`onprogress` gets called as the file transfer progresses. The parameters sent to it are not well documented. <br />
-The parameters are:
- * e.lengthComputable - (boolean) determines if the length of the file is computable
- * e.loaded - (long) running byte count of bytes transfered
- * e.total - (long) total number of bytes to be transfered
+*`onprogress` gets called as the file transfer progresses. The parameters sent to it are not well documented. <br />The parameters are:
+ - e.lengthComputable - (boolean) determines if the length of the file is computable
+ - e.loaded - (long) running byte count of bytes transfered
+ - e.total - (long) total number of bytes to be transfered
 
 NOTES: From example code in documentation, and [src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
 
