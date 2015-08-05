@@ -27,6 +27,8 @@ NOTES: From example code in documentation, and [src/android/FileProgressResult.j
 
 ###upload (method)###
 
+`upload(fileURL, server, successCallback, errorCallback, options, trustAllHosts);`
+
 * fileURL
 * server
 * successCallback - callback receives `FileUploadResult` (Object)
@@ -42,6 +44,8 @@ NOTES: From example code in documentation, and [src/android/FileProgressResult.j
 
 ###download (method)###
 
+`upload(source, target, successCallback, errorCallback, trustAllHosts, options);`
+
 * source - URL of the server to download the file, as encoded by encodeURI().
 * target
 * successCallback - callback receives `FileEntry` (Object)
@@ -50,6 +54,8 @@ NOTES: From example code in documentation, and [src/android/FileProgressResult.j
 * options
 
 ##abort (method)###
+
+`abort()`
 
 * (no parameters)
 
@@ -63,7 +69,7 @@ NOTES: From example code in documentation, and [src/android/FileProgressResult.j
 
 ###FileTransferError (object)###
 
-* code: One of the predefined error codes listed below. (Number)
+* code: One of the predefined error codes listed below *Constants*. (Number)
 * source: URL to the source. (String)
 * target: URL to the target. (String)
 * http_status: HTTP status code. This attribute is only available when a response code is received from the HTTP connection. (Number)
