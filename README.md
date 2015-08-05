@@ -6,9 +6,9 @@ a simple test of Phonegaps's FileTransfer API
 Documentation source: [cordova-plugin-file-transfer](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) <br />
 *The documentation source is poorly written & incomplete.*
 
-**FileTransfer** has
+The **FileTransfer** API has
 * one (1) property - `onprogress`
-* three (3) methods - * `upload`,`download`, &amp; `abort`
+* three (3) methods - `upload`,`download`, &amp; `abort`
 * two (2)  support objects - `FileUploadResult` &amp;`FileTransferError`
 
 ##Properties##
@@ -23,12 +23,6 @@ This property (callback) gets appended to the `FileTransfer` object.
 NOTES: From example code in documentation, and [src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
 
 ##Methods##
-
-* `upload`
-* `download`
-* `abort`
-
-##Parameters for Methods##
 
 ###upload (method)###
 
