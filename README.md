@@ -15,12 +15,12 @@ The **FileTransfer** API has
 
 This property (callback) gets appended to the `FileTransfer` object.
 
-* `onprogress` gets called-back as the file transfer progresses. The parameters sent to it are not well documented. The W3C documentations says it gets an `eventProgress` object, but it does not list a reference. The callback parameters are:
+* `onprogress` gets called-back as the file transfer progresses. The parameters sent to it are not well documented. The W3C documentations says it gets an `eventProgress` object, but it does not list a reference, and these parameters do not match known W3C documents of the same name. The callback parameters are:
  - e.lengthComputable - (boolean) determines if the length of the file is computable
  - e.loaded - (long) running byte count of bytes transfered
  - e.total - (long) total number of bytes to be transfered
 
-NOTES: Parameters derived from the example code in documentation, and the Java source  [src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
+NOTES: Parameters derived from the example code in documentation, and the Java source -&gt; [src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
 
 ##Methods##
 
@@ -28,11 +28,11 @@ NOTES: Parameters derived from the example code in documentation, and the Java s
 
 `upload(fileURL, server, successCallback, errorCallback, options, trustAllHosts);`
 
-* fileURL
-* server
+* fileURL - Filesystem URL representing the file on the device
+* server - URL of the server to receive the file, as encoded by `encodeURI()`.
 * successCallback - callback receives `FileUploadResult` (Object)
 * errorCallback - callback receives `FileTransferError` (Object)
-* options
+* options -
  - fileKey: The name of the form element. Defaults to file. (DOMString)
  - fileName: The file name to use when saving the file on the server. Defaults to image.jpg. (DOMString)
  - mimeType: The mime type of the data to upload. Defaults to image/jpeg. (DOMString)
@@ -45,12 +45,12 @@ NOTES: Parameters derived from the example code in documentation, and the Java s
 
 `upload(source, target, successCallback, errorCallback, trustAllHosts, options);`
 
-* source - URL of the server to download the file, as encoded by encodeURI().
-* target
+* source - URL of the server to download the file, as encoded by `encodeURI()`.
+* target -
 * successCallback - callback receives `FileEntry` (Object)
 * errorCallback - callback receives `FileTransferError` (Object)
 * trustAllHosts - (default:false)
-* options
+* options -
 
 ##abort (method)###
 
@@ -64,7 +64,8 @@ NOTES: Parameters derived from the example code in documentation, and the Java s
 * responseCode: The HTTP response code returned by the server. (long)
 * response: The HTTP response returned by the server. (DOMString)
 * headers: The HTTP response headers by the server. Currently supported on iOS only. (Object)
- * iOS does not support responseCode or bytesSent.
+
+* iOS does not support 'responseCode' or 'bytesSent'.
 
 ###FileTransferError (object)###
 
