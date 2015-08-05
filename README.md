@@ -50,7 +50,7 @@ NOTES: Parameters derived from the example code in documentation, and the Java s
 * successCallback - callback receives `FileEntry` (Object)
 * errorCallback - callback receives `FileTransferError` (Object)
 * trustAllHosts - (default:false)
-* options -
+* options - (not documented)
 
 ##abort (method)###
 
