@@ -45,12 +45,12 @@ NOTES: From example code in documentation, and [src/android/FileProgressResult.j
 
 ###FileUploadResult (object)###
 
-*
-** bytesSent: The number of bytes sent to the server as part of the upload. (long)
-** responseCode: The HTTP response code returned by the server. (long)
-** response: The HTTP response returned by the server. (DOMString)
-** headers: The HTTP response headers by the server. Currently supported on iOS only. (Object)
-*** iOS does not support responseCode or bytesSent.
+
+* bytesSent: The number of bytes sent to the server as part of the upload. (long)
+* responseCode: The HTTP response code returned by the server. (long)
+* response: The HTTP response returned by the server. (DOMString)
+* headers: The HTTP response headers by the server. Currently supported on iOS only. (Object)
+ * iOS does not support responseCode or bytesSent.
 
 
 ###FILES###
