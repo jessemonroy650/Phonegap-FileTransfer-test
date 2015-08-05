@@ -8,7 +8,7 @@ The source is poorly written & incomplete.
 
 * onprogress
 
-`onprogress` gets called as the file transfer progresses. The parameters sent to it are not well documented.
+*`onprogress` gets called as the file transfer progresses. The parameters sent to it are not well documented. <br />
 The parameters are:
  * e.lengthComputable - (boolean) determines if the length of the file is computable
  * e.loaded - (long) running byte count of bytes transfered
