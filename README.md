@@ -4,7 +4,7 @@ a simple test of Phonegaps's FileTransfer API
 **Abstract:** The FileTransfer object provides a way to upload files using an HTTP multi-part POST request, and to download files as well.
 
 Documentation source: [cordova-plugin-file-transfer](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) <br />
-*The documentation source is poorly written & incomplete.*
+*The documentation source is poorly written, incomplete, & has mistakes.*
 
 The **FileTransfer** API has
 * one (1) property - `onprogress`
@@ -15,12 +15,12 @@ The **FileTransfer** API has
 
 This property (callback) gets appended to the `FileTransfer` object.
 
-* `onprogress` gets called-back as the file transfer progresses. The parameters sent to it are not well documented. <p />The callback parameters are:
+* `onprogress` gets called-back as the file transfer progresses. The parameters sent to it are not well documented. The W3C documentations says it gets an `eventProgress` object, but it does not list a reference. The callback parameters are:
  - e.lengthComputable - (boolean) determines if the length of the file is computable
  - e.loaded - (long) running byte count of bytes transfered
  - e.total - (long) total number of bytes to be transfered
 
-NOTES: From example code in documentation, and [src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
+NOTES: Parameters derived from the example code in documentation, and the Java source  [src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
 
 ##Methods##
 
