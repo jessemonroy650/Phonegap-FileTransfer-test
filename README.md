@@ -6,6 +6,8 @@ a simple test of Phonegaps's FileTransfer API
 Documentation source: [cordova-plugin-file-transfer](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) <br />
 *The documentation source is poorly written, incomplete, & has mistakes.*
 
+Note: `encodeURI()` is native to Javascript.
+
 The **FileTransfer** API has
 * one (1) property - `onprogress`
 * three (3) methods - `upload`,`download`, &amp; `abort`
@@ -75,7 +77,7 @@ NOTES: Parameters derived from the example code in documentation, and the Java s
 * http_status: HTTP status code. This attribute is only available when a response code is received from the HTTP connection. (Number)
 * exception: Either e.getMessage or e.toString (String)
 
-* Constants
+* Constants (for `code`)
  - 1 = FileTransferError.FILE_NOT_FOUND_ERR
  - 2 = FileTransferError.INVALID_URL_ERR
  - 3 = FileTransferError.CONNECTION_ERR
