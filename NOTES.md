@@ -60,6 +60,9 @@ NOTES: Parameters derived from the [example code](https://github.com/apache/cord
 
 * (no parameters)
 
+
+##Objects##
+
 ###FileUploadResult (object)###
 
 * bytesSent: The number of bytes sent to the server as part of the upload. (long)
@@ -71,7 +74,7 @@ iOS does not support 'responseCode' or 'bytesSent'.
 
 ###FileDownloadResult (object)###
 
-There is no FileDownloadResult (object). The documentation says a `FileEntry` object will be returned. They mean this [FileEntry](https://github.com/apache/cordova-plugin-file). In turn the details can be found at [HTML5Rocks](http://www.html5rocks.com/en/tutorials/file/filesystem/)
+There is no FileDownloadResult (object). The documentation says a `FileEntry` object will be returned. They mean this [FileEntry](https://github.com/apache/cordova-plugin-file). In turn, the vague details can be found at [HTML5Rocks](http://www.html5rocks.com/en/tutorials/file/filesystem/)
 
 ###FileTransferError (object)###
 
