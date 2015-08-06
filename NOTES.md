@@ -1,5 +1,7 @@
 # NOTES #
+----
 Date: 2015-08-05
+----
 
 **Abstract:** The FileTransfer object provides a way to upload files using an HTTP multi-part POST request, and to download files as well.
 
