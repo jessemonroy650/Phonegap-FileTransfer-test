@@ -30,7 +30,7 @@ NOTES: Parameters derived from the example code in the documentation, and the Ja
 
 `upload(fileURL, server, successCallback, errorCallback, options, trustAllHosts);`
 
-* fileURL - Filesystem URL representing the file on the device
+* fileURL - Filesystem URL representing the file on the device (NOTE: Many issues. SEE: **Backwards Compatibility Notes** in docs)
 * server - URL of the server to receive the file, as encoded by `encodeURI()`.
 * successCallback - callback receives `FileUploadResult` (Object)
 * errorCallback - callback receives `FileTransferError` (Object)
@@ -48,7 +48,7 @@ NOTES: Parameters derived from the example code in the documentation, and the Ja
 `upload(source, target, successCallback, errorCallback, trustAllHosts, options);`
 
 * source - URL of the server to download the file, as encoded by `encodeURI()`.
-* target -
+* target - Filesystem url representing the file on the device. (NOTE: Many issues. SEE: **Backwards Compatibility Notes** in docs)
 * successCallback - callback receives `FileEntry` (Object)
 * errorCallback - callback receives `FileTransferError` (Object)
 * trustAllHosts - (default:false)
