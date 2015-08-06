@@ -1,7 +1,6 @@
 # NOTES #
 Date: 2015-08-05
 
-
 **Abstract:** The FileTransfer object provides a way to upload files using an HTTP multi-part POST request, and to download files as well.
 
 Documentation source: [cordova-plugin-file-transfer](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) <br />
@@ -50,7 +49,7 @@ NOTES: Parameters derived from the example code in the documentation, and the Ja
 
 * source - URL of the server to download the file, as encoded by `encodeURI()`.
 * target - Filesystem url representing the file on the device. (NOTE: Many issues. SEE: **Backwards Compatibility Notes** in docs)
-* successCallback - callback receives `FileEntry` (Object)
+* successCallback - callback receives `FileEntry` (Object) (SEE: below **FileDownloadResult**)
 * errorCallback - callback receives `FileTransferError` (Object)
 * trustAllHosts - (default:false)
 * options - (vaguely defined as `headers` for "Authorization"; See code example)
@@ -69,6 +68,10 @@ NOTES: Parameters derived from the example code in the documentation, and the Ja
 * headers: The HTTP response headers by the server. Currently supported on iOS only. (Object)
 
 iOS does not support 'responseCode' or 'bytesSent'.
+
+###FileDownloadResult (object)###
+
+There is no FileDownloadResult (object). The documentation says a `FileEntry` object will be returned. They mean this `[FileEntry](https://github.com/apache/cordova-plugin-file)`. In turn the details can be found at [HTML5Rocks](http://www.html5rocks.com/en/tutorials/file/filesystem/)
 
 ###FileTransferError (object)###
 
