@@ -10,19 +10,19 @@ Note: `encodeURI()` is native to Javascript.
 
 The **FileTransfer** API has
 * one (1) property - `onprogress`
-* three (3) methods - `upload`,`download`, &amp; `abort`
+* three (3) methods - `upload`,`download` &amp; `abort`
 * two (2)  support objects - `FileUploadResult` &amp;`FileTransferError`
 
 ##Properties##
 
-This property (callback) gets appended to the `FileTransfer` object.
+This property (callback function) gets appended to the `FileTransfer` object. It appears the purpose of this function is to track transfers.
 
 * `onprogress` gets called-back as the file transfer progresses. The parameters sent to it are not well documented. The W3C documentations says it gets an `eventProgress` object, but it does not list a reference, and these parameters do not match known W3C documents of the same name. The callback parameters are:
  - e.lengthComputable - (boolean) determines if the length of the file is computable
  - e.loaded - (long) running byte count of bytes transfered
  - e.total - (long) total number of bytes to be transfered
 
-NOTES: Parameters derived from the example code in documentation, and the Java source -&gt; [src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
+NOTES: Parameters derived from the example code in the documentation, and the Java source -&gt;[src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
 
 ##Methods##
 
@@ -67,7 +67,7 @@ NOTES: Parameters derived from the example code in documentation, and the Java s
 * response: The HTTP response returned by the server. (DOMString)
 * headers: The HTTP response headers by the server. Currently supported on iOS only. (Object)
 
-* iOS does not support 'responseCode' or 'bytesSent'.
+iOS does not support 'responseCode' or 'bytesSent'.
 
 ###FileTransferError (object)###
 
