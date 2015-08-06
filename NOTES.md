@@ -72,7 +72,7 @@ iOS does not support 'responseCode' or 'bytesSent'.
 ###FileDownloadResult (object)###
 
 There is no FileDownloadResult (object). The documentation says a `FileEntry` object will be returned. They mean
-this `[FileEntry](https://github.com/apache/cordova-plugin-file)`. In turn the details can be found at [HTML5Rocks](http://www.html5rocks.com/en/tutorials/file/filesystem/)
+this [FileEntry](https://github.com/apache/cordova-plugin-file). In turn the details can be found at [HTML5Rocks](http://www.html5rocks.com/en/tutorials/file/filesystem/)
 
 ###FileTransferError (object)###
 
