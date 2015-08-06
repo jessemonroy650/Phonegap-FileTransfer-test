@@ -22,7 +22,7 @@ This property (callback function) gets appended to the `FileTransfer` object. It
  - e.loaded - (long) running byte count of bytes transfered
  - e.total - (long) total number of bytes to be transfered
 
-NOTES: Parameters derived from the example code in the documentation, and the Java source -&gt;[src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
+NOTES: Parameters derived from the [example code](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) in the documentation, and the Java source -&gt;[src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
 
 ##Methods##
 
@@ -52,7 +52,7 @@ NOTES: Parameters derived from the example code in the documentation, and the Ja
 * successCallback - callback receives `FileEntry` (Object) (SEE: below **FileDownloadResult**)
 * errorCallback - callback receives `FileTransferError` (Object)
 * trustAllHosts - (default:false)
-* options - (vaguely defined as `headers` for "Authorization"; See code example)
+* options - (vaguely defined as `headers` for "Authorization"; SEE [code example](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md))
 
 ##abort (method)###
 
