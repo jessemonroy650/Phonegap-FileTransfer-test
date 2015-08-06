@@ -14,6 +14,7 @@ The **FileTransfer** API has
 * two (2)  support objects - `FileUploadResult` &amp;`FileTransferError`
 
 ##Properties##
+----
 
 This property (callback function) gets appended to the `FileTransfer` object. It appears the purpose of this function is to track transfers.
 
@@ -25,6 +26,7 @@ This property (callback function) gets appended to the `FileTransfer` object. It
 NOTES: Parameters derived from the [example code](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/doc/index.md) in the documentation, and the Java source -&gt;[src/android/FileProgressResult.java](https://github.com/apache/cordova-plugin-file-transfer/blob/16249c2f7ac53cb593e11eeae180066a88a28271/src/android/FileProgressResult.java)
 
 ##Methods##
+----
 
 ###upload (method)###
 
@@ -62,6 +64,7 @@ NOTES: Parameters derived from the [example code](https://github.com/apache/cord
 
 
 ##Objects##
+----
 
 ###FileUploadResult (object)###
 
